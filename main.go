@@ -19,7 +19,6 @@ func main() {
 	n := negroni.New(
 		negroni.NewRecovery(),
 		// negroni.HandlerFunc(AppMiddleware),
-		negroni.NewLogger(),
 	)
 	n.UseHandler(router)
 
